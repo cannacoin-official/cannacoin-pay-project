@@ -1,0 +1,167 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-color: #1b3d33;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image and add spacing below */
+}
+
+/* Button styling */
+button {
+    background-color: #c1a15b;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #a08643;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Section styling */
+.about-section,
+.tokenomics-section,
+.buy-tokens-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.token-distribution {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.token-about {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    width: 500px;
+    background-color: #fff;
+}
+
+.token-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+/* Buy Tokens Section - Input and Buttons */
+.input-amount {
+    width: 60%; /* Adjusted for a better balance */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space below input */
+    text-align: center;
+}
+
+/* Button container for alignment */
+.input-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#approveTokensBtn {
+    background-color: #f39c12;
+    color: white;
+}
+
+#buyTokensBtn {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .input-button-container {
+        flex-direction: column; /* Stack input and buttons vertically */
+        gap: 15px;
+    }
+
+    .input-amount {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #c1a15b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
