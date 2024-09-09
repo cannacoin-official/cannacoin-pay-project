@@ -1,0 +1,1 @@
+# cannacoin-pay
